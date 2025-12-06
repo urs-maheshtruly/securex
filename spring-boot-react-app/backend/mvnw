@@ -1,0 +1,10 @@
+#!/bin/sh
+mvnw() {
+  mvn "$@"
+}
+
+if [ -z "$1" ]; then
+  mvnw help:help
+else
+  mvnw "$@"
+fi
